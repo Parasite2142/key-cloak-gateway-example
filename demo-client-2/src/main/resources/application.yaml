@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/auth/realms/TestRealm
+  application:
+    name: demo-client-2
+
+
+server:
+  port: 8082
+#  servlet:
+#    context-path: /${spring.application.name}/
